@@ -6,9 +6,9 @@ export default function Footer() {
   const currentYear = new Date().getFullYear()
 
   const socialLinks = [
-    { label: 'Github', href: '#' },
+    { label: 'Github', href: 'https://github.com/reyneratira' },
     { label: 'LinkedIn', href: '#' },
-    { label: 'Source Code', href: '#' },
+    { label: 'Source Code', href: 'https://github.com/reyneratira/reyneratira-portofolio' },
   ]
 
   return (
@@ -20,7 +20,7 @@ export default function Footer() {
         {/* Brand */}
         <div className="text-lg font-bold text-on-surface">REYNER ATIRA</div>
 
-        {/* Copyright */}
+        {/* Copyright (i wish hahaha) */}
         <p className="text-outline">
           © {currentYear} REYNER ATIRA PRASETYO. BUILT FOR PRECISION.
         </p>

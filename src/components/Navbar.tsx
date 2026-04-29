@@ -8,8 +8,8 @@ export default function Navbar() {
   const [isMobileOpen, setIsMobileOpen] = useState(false)
 
   const navLinks = [
-    { label: 'Work', href: '#work' },
     { label: 'Skills', href: '#skills' },
+    { label: 'Work', href: '#work' },
     { label: 'About', href: '#about' },
     { label: 'Contact', href: '#contact' },
   ]
@@ -45,7 +45,7 @@ export default function Navbar() {
               <a
                 href={link.href}
                 onClick={(e) => handleNavClick(e, link.href)}
-                className="text-label-caps text-on-surface-variant transition-all duration-200 hover:line-through hover:decoration-primary-container hover:text-on-surface cursor-pointer"
+                className="text-label-caps text-on-surface-variant transition-all duration-200 hover:decoration-primary-container hover:text-on-surface cursor-pointer"
               >
                 {link.label}
               </a>
@@ -72,19 +72,16 @@ export default function Navbar() {
         >
           <div className="flex flex-col gap-1.5 w-6">
             <span
-              className={`h-0.5 bg-on-surface transition-all duration-300 ${
-                isMobileOpen ? 'rotate-45 translate-y-2' : ''
-              }`}
+              className={`h-0.5 bg-on-surface transition-all duration-300 ${isMobileOpen ? 'rotate-45 translate-y-2' : ''
+                }`}
             />
             <span
-              className={`h-0.5 bg-on-surface transition-all duration-300 ${
-                isMobileOpen ? 'opacity-0' : ''
-              }`}
+              className={`h-0.5 bg-on-surface transition-all duration-300 ${isMobileOpen ? 'opacity-0' : ''
+                }`}
             />
             <span
-              className={`h-0.5 bg-on-surface transition-all duration-300 ${
-                isMobileOpen ? '-rotate-45 -translate-y-2' : ''
-              }`}
+              className={`h-0.5 bg-on-surface transition-all duration-300 ${isMobileOpen ? '-rotate-45 -translate-y-2' : ''
+                }`}
             />
           </div>
         </button>
@@ -92,9 +89,8 @@ export default function Navbar() {
 
       {/* Mobile Menu */}
       <div
-        className={`md:hidden border-t border-surface-container-highest bg-surface-container-lowest overflow-hidden transition-all duration-300 ${
-          isMobileOpen ? 'max-h-80' : 'max-h-0'
-        }`}
+        className={`md:hidden border-t border-surface-container-highest bg-surface-container-lowest overflow-hidden transition-all duration-300 ${isMobileOpen ? 'max-h-80' : 'max-h-0'
+          }`}
         id="mobile-menu"
       >
         <ul className="flex flex-col px-8 py-6 gap-6">

@@ -42,7 +42,7 @@ export default function Projects() {
             key={project.title}
             className={`group relative border border-surface-variant bg-surface-container-lowest overflow-hidden flex flex-col h-full hover:border-primary-container transition-all duration-500 cursor-pointer ${isInView ? 'opacity-100 translate-y-0' : 'opacity-0 translate-y-8'
               }`}
-            style={{ transitionDelay: `${(i + 1) * 200}ms` }}
+            style={{ transitionDelay: `${(i + 1) * 100}ms` }}
             id={`project-card-${i}`}
           >
             <div className="p-8 flex flex-col flex-grow gap-4">

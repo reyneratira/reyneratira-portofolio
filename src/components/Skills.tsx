@@ -51,7 +51,7 @@ export default function Skills() {
             key={cat.title}
             className={`bg-surface-container-low border border-surface-variant p-8 hover:border-primary-container transition-all duration-500 ${isInView ? 'opacity-100 translate-y-0' : 'opacity-0 translate-y-8'
               }`}
-            style={{ transitionDelay: `${(i + 1) * 150}ms` }}
+            style={{ transitionDelay: `${(i + 1) * 30}ms` }}
           >
             <h3 className={`text-h3 ${cat.colorClass} mb-6`}>{cat.title}</h3>
             <ul className="flex flex-wrap gap-2">
